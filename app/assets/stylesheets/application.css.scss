@@ -17,12 +17,58 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-h1, h2, h3 {
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+}
+
+ h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+// Nav Styles
 .navbar {
   background: #232b38;
-  color: white;
   border: none;
+}
+.navbar-default .navbar-brand {
+  color: white;
+  font-weight: 600;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-weight: 300;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
+}
+// Home Page Styles
+.home-callout {
+  color: white;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+//homepage stuff
+.home-callout{
+    background: url('https://images.unsplash.com/photo-1447710441604-5bdc41bc6517?dpr=2&auto=format&fit=crop&w=1800&h=1000&q=80&cs=tinysrgb&crop=') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color:white;
+    margin: -20px;
+    padding-top: 160px;
+    padding-bottom: 200px;
 }
